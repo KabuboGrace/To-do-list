@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    | About
+{% endblock title %}
+
+{% block content %}
+  {% load static %}
+    <h4>About Page</h4>
+
+    <h1 style="text-align: center; color: maroon">Light It LTD</h1>
+
+    <p style="font-size: 30px">Welcome to our official website.</p>
+  <div style="display: flex">
+      <p style="font-size:20px">We help institutions in rural areas to access electricity.</p>
+      <img src="{% static 'images/street.jpeg' %}" style="width: 50%;height: 200px" alt="">
+  </div>
+
+    <p>We deal with schools, hospitals , children's homes, administration centers,market areas and religious centers</p>
+
+    <p>We also install street lights so that residents feel safe when they are outside at night which enables then  to be able to continue with their errands as normal</p>
+
+
+{% endblock content %}
+
